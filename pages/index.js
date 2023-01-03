@@ -69,6 +69,7 @@ const Page = () => {
         <World />
         <div className="gradient-05 z-0" />
         <Feedback />
+
       </div>
 
       <Footer />

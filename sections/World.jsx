@@ -14,7 +14,7 @@ const World = () => (
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
     >
-      <TypingText title="| People on the world" textStyles="text-center" />
+      <TypingText title="| World" textStyles="text-center" />
       <TitleText
         title={(
           <>

@@ -111,3 +111,44 @@ export const socials = [
     url: '/facebook.svg',
   },
 ];
+
+export const members = [
+  {
+    id: 'm-1',
+    name: 'Oleg',
+    title: 'Senior Unity Developer',
+    imgUrl: 'ceo.jpeg',
+    description: '',
+    link: 'https://www.linkedin.com/in/oleg-shlyahovchuk-a679a3116/',
+  }, {
+    id: 'm-3',
+    name: 'Vitaliy',
+    title: 'Senior Unity Developer',
+    imgUrl: 'vitaliy.jpeg',
+    description: '',
+    link: 'https://www.linkedin.com/in/vitalii-shliakhovchuk-a21258178/',
+  },
+  {
+    id: 'm-5',
+    name: 'Yaroslav',
+    title: 'Web Developer',
+    imgUrl: 'yaruk.jpeg',
+    description: '',
+    link: 'https://www.linkedin.com/in/yaroslav-shliakhovchuk/',
+  }, {
+    id: 'm-2',
+    name: 'Valya',
+    title: '2D Artist',
+    imgUrl: 'valya.jpeg',
+    description: '',
+    link: 'https://www.linkedin.com/in/valentyna-tsvelykh-%F0%9F%87%BA%F0%9F%87%A6-224716247/',
+  }, {
+    id: 'm-4',
+    name: 'Daryna',
+    title: 'QA',
+    imgUrl: 'daryna.jpeg',
+    description: '',
+    link: 'https://www.linkedin.com/in/daryna-kurilko-bb0669234/',
+  },
+
+];

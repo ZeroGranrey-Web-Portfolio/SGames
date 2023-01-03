@@ -10,7 +10,6 @@ import {
 
 const Navbar = () => {
   const [active, setActive] = useState(true);
-  const [clicked, setClicked] = useState(false);
 
   return (
     <motion.section
@@ -19,7 +18,7 @@ const Navbar = () => {
       viewport={{ once: true, amount: 0.15 }}
       initial="hidden"
       whileInView="show"
-      className={`${styles.xPaddings} ${clicked ? 'py-[7%]' : 'py-[5%]'} relative`}
+      className={`${styles.xPaddings} py-[100px] relative`}
     >
       <div className="absolute w-[50%] inset-0 gradient-01 " />
       <div
@@ -54,19 +53,16 @@ const Navbar = () => {
             <a
               className={`${styles.gradientText} cursor-pointer font-extrabold text-[22px] w-full`}
               href="#about"
-              onClick={() => setClicked(true)}
             >
               About Us
             </a>
             <a href="#catalog"
               className={`${styles.gradientText} cursor-pointer font-extrabold text-[22px] w-full`}
-              onClick={() => setClicked(true)}
             >
               Catalog
             </a>
             <a href="#team"
               className={`${styles.gradientText} cursor-pointer font-extrabold text-[22px] w-full`}
-              onClick={() => setClicked(true)}
             >
               Team
             </a>

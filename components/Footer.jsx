@@ -21,13 +21,11 @@ const Footer = () => (
             Copyright © {new Date().getFullYear() - 1} -{' '}
             {new Date().getFullYear()}. All rights reserved
           </p>
-          <div>
-            <h2 className=" text-[20px] text-white font-extrabold">
+          <div className="flex flex-row items-center justify-start">
+            <h2 className="text-white text-[16px] ">
               Email:
             </h2>
-            <h2 className="underline animate-text text-[20px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#00ffbb] to-[#009dff]">
-              sgamesstudio@gmail.com
-            </h2>
+            <span className="animate-text text-transparent bg-clip-text bg-gradient-to-r from-[#00ffbb] to-[#009dff]">&nbsp;sgamesstudio@gmail.com</span>
           </div>
         </div>
       </div>
