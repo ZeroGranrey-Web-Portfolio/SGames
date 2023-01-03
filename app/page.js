@@ -1,7 +1,9 @@
-"use client";
-import { Footer, Navbar } from "../components";
-import axios from "axios";
-import { useEffect, useState } from "react";
+'use client';
+
+import axios from 'axios';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { Footer, Navbar } from '../components';
 import {
   About,
   Explore,
@@ -11,7 +13,7 @@ import {
   Insights,
   WhatsNew,
   World,
-} from "../sections";
+} from '../sections';
 
 const Page = () => {
   const [data, setData] = useState();
@@ -24,15 +26,15 @@ const Page = () => {
   useEffect(() => {
     axios
       .get(
-        "https://opensheet.elk.sh/1whrsPZBjqKQGTBXLdThLTom8aeIcmjWk3Ej2gURyJOI/1"
+        'https://opensheet.elk.sh/1whrsPZBjqKQGTBXLdThLTom8aeIcmjWk3Ej2gURyJOI/1',
       )
       .then((result) => {
         setData(result.data);
       });
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -40,12 +42,12 @@ const Page = () => {
     <div className="bg-primary-black overflow-hidden relative ">
       <Navbar />
       <Hero />
-      <a
+      <Link
         href="#navbar"
         className={`${
-          scrollPosition < 450 && "hidden "
+          scrollPosition < 450 && 'hidden '
         } bg-primary-black fixed bottom-5 right-5 z-20 rounded-full w-[55px] h-[55px] ${
-          scrollPosition > 450 && "flex"
+          scrollPosition > 450 && 'flex'
         } items-center justify-center transition-[flex] duration-75 ease-in-out group`}
       >
         <img
@@ -53,7 +55,7 @@ const Page = () => {
           alt="arrow"
           className="rotate-180 group-hover:scale-125"
         />
-      </a>
+      </Link>
       <div className="relative">
         <About />
         <div className="gradient-03 z-0" />

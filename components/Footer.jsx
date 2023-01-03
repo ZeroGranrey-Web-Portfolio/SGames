@@ -1,8 +1,9 @@
-"use client";
-import { motion } from "framer-motion";
-import styles from "../styles";
-import { footerVariants } from "../utils/motion";
-import { socials } from "../constants";
+'use client';
+
+import { motion } from 'framer-motion';
+import styles from '../styles';
+import { footerVariants } from '../utils/motion';
+
 const Footer = () => (
   <motion.footer
     variants={footerVariants}
@@ -12,41 +13,21 @@ const Footer = () => (
   >
     <div className="footer-gradient" />
     <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
-      <div className="flex items-center justify-between flex-wrap gap-5">
-        <h4 className="font-bold md:text-[64px] text-[44px] text-white">
-          Enter the Metaverse
-        </h4>
-        <button
-          type="button"
-          className="flex items-center h-fit py-4 px-6 bg-[#25618b] rounded-[32px] gap-[12px] "
-        >
-          <img
-            src="/headset.svg"
-            alt="headset"
-            className="w-[24px] h-[24px] object-contain "
-          />
-          <span className="font-normal text-[16px] text-white">
-            ENTER METAVERSE
-          </span>
-        </button>
-      </div>
+      <div className="flex items-center justify-justify-evenly " />
       <div className="flex flex-col ">
         <div className="mb-[50px] h-[2px] bg-white opacity-10" />
-        <div className="flex items-center justify-between flex-wrap gap-4">
-          <h4 className="font-extrabold text-[24px] text-white">Metaversus</h4>
-          <p className="font-normal text-[14px] text-white opacity-50">
-            Copyright © {new Date().getFullYear() - 1} -{" "}
+        <div className="flex items-center justify-between ">
+          <p className="font-normal text-[14px] text-white opacity-50 justify-end w-full">
+            Copyright © {new Date().getFullYear() - 1} -{' '}
             {new Date().getFullYear()}. All rights reserved
           </p>
-          <div className="flex gap-4">
-            {socials.map((social, index) => (
-              <img
-                src={social.url}
-                alt={social.name}
-                key={social.name}
-                className="w-[24px] h-[24px] object-contain cursor-pointer"
-              />
-            ))}
+          <div>
+            <h2 className=" text-[20px] text-white font-extrabold">
+              Email:
+            </h2>
+            <h2 className="underline animate-text text-[20px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#00ffbb] to-[#009dff]">
+              sgamesstudio@gmail.com
+            </h2>
           </div>
         </div>
       </div>

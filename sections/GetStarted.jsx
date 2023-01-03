@@ -1,9 +1,10 @@
-"use client";
-import { motion } from "framer-motion";
-import { TypingText, StartSteps, TitleText } from "../components";
-import styles from "../styles";
-import { staggerContainer, fadeIn, planetVariants } from "../utils/motion";
-import { startingFeatures } from "../constants";
+'use client';
+
+import { motion } from 'framer-motion';
+import { TypingText, StartSteps, TitleText } from '../components';
+import styles from '../styles';
+import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
+import { startingFeatures } from '../constants';
 
 const GetStarted = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -15,7 +16,7 @@ const GetStarted = () => (
       viewport={{ once: false, amount: 0.25 }}
     >
       <motion.div
-        variants={planetVariants("left")}
+        variants={planetVariants('left')}
         className={`flex-1 ${styles.flexCenter}`}
       >
         <img
@@ -25,11 +26,11 @@ const GetStarted = () => (
         />
       </motion.div>
       <motion.div
-        variants={fadeIn("left", "tween", 0.2, 1)}
+        variants={fadeIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75%] flex justify-center flex-col"
       >
-        <TypingText title="| How Metaversus works" />
-        <TitleText title={<>Get started with just a few clicks</>} />
+        <TypingText title="| How We Work" />
+        <TitleText title={<>How work gets done around here</>} />
         <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px] ">
           {startingFeatures.map((feature, index) => (
             <StartSteps key={feature} number={index + 1} text={feature} />
